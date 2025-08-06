@@ -1,0 +1,19 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int a = n;
+        int count = 0;
+        while(n>0){
+            int m = n%10;
+            if(m>0){
+                count = count+m;
+            }n=n/10;
+        }if(a%count==0){
+            System.out.println("Harshad Number");
+        }else{
+            System.out.println("Not Harshad Number");
+        }
+    }
+}
