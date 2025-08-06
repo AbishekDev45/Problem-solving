@@ -1,0 +1,29 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+        Scanner s = new Scanner(System.in);
+        int n =s.nextInt();
+        int org =n;
+         if(n<0){
+            n=-n;
+        }
+        int b = n;
+        int count = 0;
+        while(b!=0){
+            count++;
+            b=b/10;
+        }
+        int sum =0;
+        b = n;
+        while(b!=0){
+            int m =b%10;
+            sum = sum+(int) Math.pow(m,count) ;        
+            b=b/10;
+        }if(sum==org){
+            System.out.println("true");          
+        }else{
+            System.out.println("false");
+        }
+    }
+}
