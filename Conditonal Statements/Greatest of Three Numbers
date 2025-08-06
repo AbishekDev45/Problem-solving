@@ -1,0 +1,18 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int input1 = s.nextInt();
+        int input2 = s.nextInt();
+        int input3 = s.nextInt();
+        if(input1 == input2 || input2 == input3 || input1 == input3){
+            System.out.println("There is a tie for the greatest number");
+        }else if(input1>input2 && input1>input3){
+            System.out.println(input1+" is the greatest");
+        }else if(input2>input3  ){
+            System.out.println(input2+" is the greatest");
+        }else{
+            System.out.println(input3+" is the greatest");
+        } 
+    }
+}
