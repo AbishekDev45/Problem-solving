@@ -1,0 +1,21 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int count = 0;
+        int m = 1;
+        if(n==0){
+            count=0;
+        }else{
+            if(n<0){
+                n=-n;
+            }
+            while(n!=0){
+                 m =n%10;
+                n=n/10;
+               count=m+count;
+            }
+        }System.out.println(count);
+    }
+}
