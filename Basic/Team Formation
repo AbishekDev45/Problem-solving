@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int input1 = s.nextInt();
+        int input2 = s.nextInt();
+        int team = input1/input2;
+        int left = input1%input2;
+        System.out.println("Total teams formed: "+team);
+         System.out.println("Players left out: "+left);
+    }
+}
