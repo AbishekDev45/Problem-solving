@@ -1,0 +1,15 @@
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int n = s.nextInt();
+        int m=1;
+        int rev =0;
+        while(n!=0){
+            m=n%10;
+            rev = rev*10+m; 
+            n=n/10;
+        }
+        System.out.println(rev);
+    }
+}
