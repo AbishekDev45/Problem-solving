@@ -1,0 +1,22 @@
+import java.io.*;
+import java.util.*;
+public class Solution {
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int a = s.nextInt();
+        int power = (int) Math.pow(a,2);
+        int n = power;
+        int m = 1;
+        int num = 0;
+        while(n>0){
+            m = n%10;
+            if(m!=0){
+            num = num+m;
+            }n=n/10;
+        }if(num==a){
+            System.out.println("true");
+        } else{
+            System.out.println("false");
+        } 
+    }
+}
