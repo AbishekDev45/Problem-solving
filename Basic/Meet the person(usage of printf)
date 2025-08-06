@@ -1,0 +1,14 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s = new Scanner(System.in);
+        int age = s.nextInt();
+        float height = s.nextFloat();
+        s.nextLine();
+        String name = s.nextLine(); 
+        System.out.printf("%s is %d years old and %.2f meters tall.",name,age,height);
+    }
+}
